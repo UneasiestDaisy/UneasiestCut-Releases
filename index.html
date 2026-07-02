@@ -12,11 +12,21 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+    <div class="bg-orb bg-orb-a" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-b" aria-hidden="true"></div>
     <div class="page-shell">
       <header class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Official Release Site</p>
-          <h1>ClipForge Studio</h1>
+          <div class="brand-lockup">
+            <div class="brand-mark">
+              <img src="./clipforge-icon.png" alt="ClipForge Studio logo">
+            </div>
+            <div class="brand-text">
+              <p class="eyebrow">Official Release Site</p>
+              <p class="brand-name">ClipForge Studio</p>
+            </div>
+          </div>
+          <h1>Cut the moments worth keeping.</h1>
           <p class="lede">
             Windows-first desktop software for turning source videos into reviewable Shorts and
             building bigger edits from the clips worth keeping.
@@ -30,6 +40,20 @@
           <div class="hero-card-label">Current Channel</div>
           <div class="hero-version" id="hero-version">Loading...</div>
           <div class="hero-status" id="hero-status">Fetching public release metadata.</div>
+          <div class="hero-card-rail">
+            <div class="rail-row">
+              <span>Lane</span>
+              <strong>Windows Alpha</strong>
+            </div>
+            <div class="rail-row">
+              <span>Look</span>
+              <strong>Forged gold + edit-bay teal</strong>
+            </div>
+            <div class="rail-row">
+              <span>Focus</span>
+              <strong>Shorts first, longform next</strong>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -90,6 +114,22 @@
           </article>
         </section>
 
+        <section class="panel">
+          <div class="section-head">
+            <p class="section-kicker">Download Visibility</p>
+            <h2>Can We Tell If Anyone Downloads It?</h2>
+          </div>
+          <p class="body-copy">
+            Yes, at a basic level. The installer is hosted as a GitHub release asset, so GitHub
+            provides per-asset download counts on the release page.
+          </p>
+          <p class="body-copy subtle">
+            That tells you how many times the file was downloaded, not who installed it. If you
+            want deeper attribution later, add site analytics for button clicks or a small redirect
+            service in front of the asset.
+          </p>
+        </section>
+
         <section class="panel" id="release-notes">
           <div class="section-head">
             <p class="section-kicker">Release Notes</p>
@@ -117,6 +157,10 @@
             <div class="faq-item">
               <h3>Will updates be version-based?</h3>
               <p>Yes. New releases should move the app version forward so installed copies can detect the update cleanly.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Can installs be tracked precisely today?</h3>
+              <p>Not from this static page alone. Right now the clean signal is GitHub asset download counts, with optional site-click analytics or a redirect layer if deeper tracking becomes worth it.</p>
             </div>
           </div>
         </section>
