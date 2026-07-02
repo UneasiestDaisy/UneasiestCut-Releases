@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClipForge Studio Downloads</title>
+    <meta
+      name="description"
+      content="Official download page for ClipForge Studio Windows builds, release notes, and update channels."
+    >
+    <link rel="icon" type="image/png" href="./clipforge-icon.png">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Official Release Site</p>
+          <h1>ClipForge Studio</h1>
+          <p class="lede">
+            Windows-first desktop software for turning source videos into reviewable Shorts and
+            building bigger edits from the clips worth keeping.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#downloads">Download Alpha</a>
+            <a class="button ghost" href="#release-notes">Read Release Notes</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-label">Current Channel</div>
+          <div class="hero-version" id="hero-version">Loading...</div>
+          <div class="hero-status" id="hero-status">Fetching public release metadata.</div>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel" id="downloads">
+          <div class="section-head">
+            <p class="section-kicker">Downloads</p>
+            <h2>Current Public Build</h2>
+          </div>
+          <div class="download-card">
+            <div>
+              <div class="card-label">Windows x64</div>
+              <h3 id="download-title">ClipForge Studio alpha</h3>
+              <p id="download-summary">
+                Public download info will appear here when the latest manifest loads.
+              </p>
+              <div class="meta-row">
+                <span class="meta-pill" id="channel-pill">alpha</span>
+                <span class="meta-pill" id="version-pill">version pending</span>
+                <span class="meta-pill" id="size-pill">size pending</span>
+              </div>
+            </div>
+            <div class="download-actions">
+              <a class="button primary disabled" id="download-button" aria-disabled="true">Preparing download</a>
+              <a class="button ghost disabled" id="release-button" aria-disabled="true">View release</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-section">
+          <article class="panel">
+            <div class="section-head">
+              <p class="section-kicker">What You Get</p>
+              <h2>Current Alpha Capabilities</h2>
+            </div>
+            <ul class="feature-list">
+              <li>Local project creation and persistence</li>
+              <li>URL and local-file source analysis</li>
+              <li>Prototype short rendering and review workflow</li>
+              <li>Approved-clips planning for longer cuts</li>
+              <li>Optional AI lane kept off by default</li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <div class="section-head">
+              <p class="section-kicker">Privacy</p>
+              <h2>What Stays Private</h2>
+            </div>
+            <p class="body-copy">
+              This site publishes installers, version metadata, and release notes only. The main
+              ClipForge Studio source repository stays private.
+            </p>
+            <p class="body-copy subtle">
+              Public installers can still be inspected, so secrets and internal-only tooling are
+              never treated as safe just because the source repo is private.
+            </p>
+          </article>
+        </section>
+
+        <section class="panel" id="release-notes">
+          <div class="section-head">
+            <p class="section-kicker">Release Notes</p>
+            <h2>Latest Alpha Notes</h2>
+          </div>
+          <div class="notes-box" id="release-notes-box">
+            Loading release notes.
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="section-head">
+            <p class="section-kicker">FAQ</p>
+            <h2>Update Flow</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3>Do users need a GitHub account?</h3>
+              <p>No. This public site and public release lane are meant to remove GitHub account friction for installs and updates.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Does this expose the private repo?</h3>
+              <p>No. The public lane hosts binaries and release metadata, while the working source repo stays private.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Will updates be version-based?</h3>
+              <p>Yes. New releases should move the app version forward so installed copies can detect the update cleanly.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./site.js"></script>
+  </body>
+</html>

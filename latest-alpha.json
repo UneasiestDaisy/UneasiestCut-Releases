@@ -1,0 +1,20 @@
+{
+  "product": "ClipForge Studio",
+  "channel": "alpha",
+  "version": "0.1.0",
+  "title": "ClipForge Studio 0.1.0 alpha",
+  "summary": "First public alpha lane for the Windows desktop prototype.",
+  "publishedAt": "2026-07-01T00:00:00Z",
+  "releaseUrl": "https://github.com/UneasiestDaisy/ClipForge-Studio-Releases/releases/tag/v0.1.0-alpha",
+  "asset": {
+    "name": "ClipForge-Studio-Setup-0.1.0.exe",
+    "sizeBytes": 121491456,
+    "sizeLabel": "115.9 MB",
+    "downloadUrl": "https://github.com/UneasiestDaisy/ClipForge-Studio-Releases/releases/download/v0.1.0-alpha/ClipForge-Studio-Setup-0.1.0.exe"
+  },
+  "notes": [
+    "Separate public download site with the main app repo still private.",
+    "Windows x64 alpha installer.",
+    "Version-based release lane for future in-app update checks."
+  ]
+}

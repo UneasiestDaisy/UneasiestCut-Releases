@@ -1,0 +1,252 @@
+:root {
+  --bg: #f5efe4;
+  --panel: rgba(255, 250, 242, 0.92);
+  --ink: #20160f;
+  --muted: #6a5648;
+  --line: rgba(62, 40, 25, 0.14);
+  --accent: #b84f1e;
+  --accent-dark: #7c2f0e;
+  --accent-soft: #f0c6a2;
+  --shadow: 0 24px 60px rgba(74, 40, 19, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Aptos", "Segoe UI Variable", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(255, 220, 184, 0.8), transparent 34%),
+    radial-gradient(circle at 80% 10%, rgba(214, 113, 55, 0.18), transparent 24%),
+    linear-gradient(180deg, #f8f1e7 0%, #f3eadc 100%);
+}
+
+.page-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 48px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 24px;
+}
+
+.hero-copy,
+.hero-card,
+.panel {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.hero-copy {
+  padding: 36px;
+}
+
+.hero-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    linear-gradient(180deg, rgba(255, 233, 211, 0.95), rgba(255, 247, 237, 0.95));
+}
+
+.eyebrow,
+.section-kicker,
+.hero-card-label,
+.card-label {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  line-height: 0.95;
+  max-width: 10ch;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  line-height: 1.05;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+.lede,
+.body-copy,
+.faq-item p,
+#download-summary,
+#release-notes-box,
+.hero-status {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.hero-actions,
+.download-actions,
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-actions {
+  margin-top: 24px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button.primary {
+  background: var(--accent);
+  color: #fffaf4;
+  box-shadow: 0 12px 26px rgba(184, 79, 30, 0.28);
+}
+
+.button.ghost {
+  border-color: var(--line);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.button.disabled {
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+.hero-version {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+main {
+  display: grid;
+  gap: 24px;
+}
+
+.panel {
+  padding: 28px;
+}
+
+.section-head {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.download-card {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(184, 79, 30, 0.08);
+  border: 1px solid rgba(184, 79, 30, 0.14);
+  color: var(--accent-dark);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.feature-list {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.subtle {
+  opacity: 0.85;
+}
+
+.notes-box {
+  white-space: pre-wrap;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 18px;
+}
+
+.faq-item {
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.faq-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+@media (max-width: 860px) {
+  .hero,
+  .download-card,
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+
+  .page-shell {
+    width: min(100% - 20px, 1120px);
+    padding-top: 18px;
+  }
+
+  .hero-copy,
+  .hero-card,
+  .panel {
+    padding: 22px;
+    border-radius: 20px;
+  }
+}
