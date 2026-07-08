@@ -1,6 +1,6 @@
-# ClipForge Studio Releases
+# UneasiestCut Releases
 
-Public release site and download lane for ClipForge Studio.
+Public release site and download lane for UneasiestCut.
 
 This repository intentionally holds:
 
@@ -8,4 +8,4 @@ This repository intentionally holds:
 - public update manifests
 - public binary release assets
 
-The main ClipForge Studio source repository remains private.
+The main UneasiestCut source repository remains private.

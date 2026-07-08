@@ -1,20 +1,20 @@
 {
   "product": "UneasiestCut",
   "channel": "alpha",
-  "version": "0.1.0",
-  "title": "UneasiestCut 0.1.0 alpha",
-  "summary": "First public alpha lane for the Windows desktop prototype.",
-  "publishedAt": "2026-07-01T00:00:00Z",
-  "releaseUrl": "https://github.com/UneasiestDaisy/UneasiestCut-Releases/releases/tag/v0.1.0-alpha",
+  "version": "0.1.1",
+  "title": "UneasiestCut 0.1.1 alpha",
+  "summary": "Alpha cleanup release with customer/lab separation, branding cleanup, and release safety checks.",
+  "publishedAt": "2026-07-08T03:14:00Z",
+  "releaseUrl": "https://github.com/UneasiestDaisy/UneasiestCut-Releases/releases/tag/v0.1.1-alpha",
   "asset": {
-    "name": "UneasiestCut-Setup-0.1.0-latest.exe",
-    "sizeBytes": 119021568,
-    "sizeLabel": "113.5 MB",
-    "downloadUrl": "https://github.com/UneasiestDaisy/UneasiestCut-Releases/releases/download/v0.1.0-alpha/UneasiestCut-Setup-0.1.0-latest.exe"
+    "name": "UneasiestCut-Setup-0.1.1-latest.exe",
+    "sizeBytes": 116916224,
+    "sizeLabel": "111.5 MB",
+    "downloadUrl": "https://github.com/UneasiestDaisy/UneasiestCut-Releases/releases/download/v0.1.1-alpha/UneasiestCut-Setup-0.1.1-latest.exe"
   },
   "notes": [
-    "Separate public download site with the main app repo still private.",
-    "Windows x64 alpha installer.",
-    "Version-based release lane for future in-app update checks."
+    "Customer app no longer exposes internal lab or release controls.",
+    "Local lab reports support review of runtime data and validation data before release.",
+    "Package and brand scans guard against internal tooling or old naming leaking into customer builds."
   ]
 }
